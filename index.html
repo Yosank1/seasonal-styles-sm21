@@ -20,6 +20,7 @@
             height: auto;
             margin: 1rem;
         }
+
         /*
         .masthead {
             font-family: 'Damion', cursive;
@@ -55,14 +56,13 @@
         nav ul {
             list-style: none;
             /* removes the bullets */
-            }
+        }
 
-        nav ul li
-            {
-                display:inline-block;
-                /* makes horizontal, but able to declare margins */
-                margin:0 2%;
-                /* margin left-right, gets smaller as necessary */
+        nav ul li {
+            display: inline-block;
+            /* makes horizontal, but able to declare margins */
+            margin: 0 2%;
+            /* margin left-right, gets smaller as necessary */
         }
 
         nav a:hover {
@@ -76,12 +76,7 @@
 
 <body>
     <header role="banner">
-        <img
-            src="images/four-seasons.gif"
-            alt="Seasonal Logo Goes Here"
-            class="flexible"
-            id="logo"
-        />
+        <img src="images/four-seasons.gif" alt="Seasonal Logo Goes Here" class="flexible" id="logo" />
         <h1 class="masthead">Eddie Browser</h1>
         <nav>
             <ul class="seasons">
@@ -164,7 +159,8 @@
                         $("#logo").attr("src", "images/summer.jpg");
                         $("#wear").attr("src", "images/summer-wear.jpg");
                         $("html").css("background-color", "#EBA52B");
-                        $("main header h3").html("Be sure not to fizzle when the Summer starts to sizzle!");
+                        $("main header h3").html(
+                            "Be sure not to fizzle when the Summer starts to sizzle!");
                         break;
                     case "winter":
                         $("#logo").attr("src", "images/winter.jpg");
@@ -178,7 +174,7 @@
                         $("html").css("background-color", "#A81124");
                         $("main header h3").html("Leaves are falling, Autumn is calling!");
                         break;
-                    default:    
+                    default:
                         $("#logo").attr('src', 'images/four-seasons.png');
                         $("#wear").attr('src', 'images/four-seasons-wear.jpg');
                         $("html").css("background-color", "#FFA07A");
